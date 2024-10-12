@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url(Images/background.jpg);
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.navbar-brand {
+    font-weight: bold; 
+}
+.navbar a ,li{
+    color: white;
+}
+.navbar-nav {
+    flex: 1; 
+    justify-content: center; 
+}
+
+.main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+}
+
+.content {
+    width: 100%;
+    max-width: 1300px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    color: #171616;
+    text-align: center;
+    padding: 20px;
+    font-size: 22px;
+}
+
+.content h1 {
+    font-family: 'Times New Roman';
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.container {
+    width: 100%;
+    max-width: 650px;
+    margin: 20px auto;
+    padding-bottom: 60px;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+.uploaded-image-container {
+    max-width: 100%;
+}
+
+.uploaded-image-container img {
+    width: 100%;
+    height: auto;
+}
+
+.image-upload {
+    margin-bottom: 20px;
+}
+
+.image-upload input[type="file"] {
+    display: none;
+}
+
+.image-upload label {
+    padding: 10px 20px;
+    background-color: #0d6efd;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 2px solid black;
+}
+
+.image-upload label:hover {
+    background-color: #053071;
+}
+
+.image-display img {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.result p {
+    font-size: 24px;
+    padding-top: 20px;
+}
+
+.result span {
+    font-weight: bold;
+}
+
+.text-extraction button {
+    padding: 10px 20px;
+    background-color: #0d6efd;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+}
+
+.text-extraction button:hover {
+    background-color: #053071;
+}
+
+.footer {
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+    margin-bottom: 20px;
+    color: #292929;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.contact-form textarea {
+    height: 150px;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #75b5e6;
+    color: #292929;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #5b73de;
+}
+
+.loading-spinner {
+    display: none;
+    border: 8px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 8px solid #333;
+    width: 60px;
+    height: 60px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+    margin: 20px auto;
+}
+
+.loading-spinner.show {
+    display: block;
+}
+
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

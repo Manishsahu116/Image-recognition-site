@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AskAI</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="Images/fabicon.png" />
+  <style>
+    .image-sections {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .image-section {
+      width: 150px;
+      height: 150px;
+      border-radius: 10px;
+      overflow: hidden;
+      margin: 0 10px;
+    }
+
+    .image-section img {
+      width: 5rem;
+      object-fit: cover;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar Section -->
+  <div id="navbar-placeholder"></div>
+
+  <div class="main">
+    <div class="content">
+      <h1>How we build ?</h1>
+      <br />
+      <p>
+        Building content for an image recognition website using (html, css,
+        javascript, and TensorFlow.js API) involves creating informative and
+        engaging material that showcases the capabilities and benefits of
+        the platform. The content should include concise explanations of how
+        image recognition technology works, highlighting its applications
+        across various industries such as e-commerce, healthcare, and
+        security. Additionally, it's essential to provide case studies or
+        success stories illustrating real-world examples of how image
+        recognition has been utilized to solve specific problems or enhance
+        processes also extracting text image using Tesseract.js OCR
+        technology.
+      </p>
+      <div class="image-sections">
+        <div class="image-section">
+          <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics">
+            <img src="Images/html.png" alt="HTML" /></a>
+        </div>
+        <div class="image-section">
+          <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics">
+            <img src="Images/css.png" alt="CSS" /></a>
+        </div>
+        <div class="image-section">
+          <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">
+            <img src="Images/javascript.png" alt="JAVASCRIPT" /></a>
+        </div>
+        <div class="image-section">
+          <a href="https://getbootstrap.com/">
+            <img src="Images/bootstrap.png" alt="BOOTSTRAP" /></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer -->
+  <div id="footer-placeholder"></div>
+
+  <script>
+    // Navbar
+    fetch('navbar.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('navbar-placeholder').innerHTML = data;
+      })
+      .catch(error => console.error('Error loading navbar:', error));
+
+    // Footer
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer-placeholder').innerHTML = data;
+      })
+      .catch(error => console.error('Error loading footer:', error));
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

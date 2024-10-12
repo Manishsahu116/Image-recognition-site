@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AskAI</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="Images/fabicon.png">
+</head>
+
+<body>
+
+    <!-- Navbar Section -->
+    <div id="navbar-placeholder"></div>
+
+    <div class="main">
+        <div class="content">
+            <h1>Learn More About Chatbot</h1><br>
+            <p>
+                To delve deeper into the world of image recognition, our website offers a wealth of additional
+                content designed to inform and inspire.Whether you're a seasoned professional or just beginning your
+                journey into image recognition, our comprehensive content library has something for everyone.
+                Explore, learn, and discover the endless possibilities of image recognition with us.
+            </p>
+        </div>
+    </div>
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+
+    <script>
+        // Navbar
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-placeholder').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading navbar:', error));
+
+        // Footer
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading footer:', error));
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
