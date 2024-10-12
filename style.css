@@ -166,7 +166,7 @@ body {
 .contact-form button {
     width: 100%;
     padding: 10px;
-    background-color: #75b5e6;
+    background-color: #0d6efd;
     color: #292929;
     border: none;
     border-radius: 5px;
@@ -175,7 +175,7 @@ body {
 }
 
 .contact-form button:hover {
-    background-color: #5b73de;
+    background-color: #053071;
 }
 
 .loading-spinner {
