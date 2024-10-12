@@ -1,3 +1,4 @@
+<<<<<<< HEAD
   let cocoSsdModelPromise = cocoSsd.load();
   let mobilenetModelPromise = mobilenet.load();
 
@@ -67,3 +68,15 @@
       };
       reader.readAsDataURL(file);
     });
+=======
+document.addEventListener('DOMContentLoaded', function() {
+    const menuToggle = document.createElement('div');
+    menuToggle.classList.add('menu-toggle');
+    menuToggle.innerHTML = '<div class="bar"></div><div class="bar"></div><div class="bar"></div>';
+    document.querySelector('.navbar').appendChild(menuToggle);
+
+    menuToggle.addEventListener('click', function() {
+        document.querySelector('.menu').classList.toggle('active');
+    });
+});
+>>>>>>> c0348dfa498b1ecf0fc57707951b292961188779
